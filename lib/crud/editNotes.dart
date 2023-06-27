@@ -1,4 +1,4 @@
-// import 'dart:html';
+
 import 'dart:math';
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -37,14 +37,13 @@ if(formdata!.validate()){
   showLoading(context);
 formdata.save();
 
-// await ref.putFile(file);
-// imageurl = await ref.getDownloadURL();
+
 
 
 await noteRef.doc(widget.docid).update({
 "title" : title,
 "note" : note,
-// "imageurl" : imageurl,
+
 "userid" : FirebaseAuth.instance.currentUser!.uid,
 });
 Navigator.of(context).pushNamed("homepage");
@@ -71,7 +70,7 @@ Navigator.of(context).pushNamed("homepage");
 
 
 
-// Navigator.of(context).pushNamed("homepage");
+
 }
 
 
@@ -195,8 +194,7 @@ Navigator.of(context).pushNamed("homepage");
 
                                        ref = FirebaseStorage.instance.ref("images").child("$imagename");
                                        Navigator.of(context).pop();
-                                      // await ref.putFile(file);
-                                      // imageurl = await ref.getDownloadURL();
+                                      
    
 
                                     }
