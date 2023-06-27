@@ -1,4 +1,4 @@
-// import 'dart:html';
+
 import 'dart:math';
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -49,7 +49,7 @@ await noteRef.add({
 Navigator.of(context).pushNamed("homepage");
 }
 
-// Navigator.of(context).pushNamed("homepage");
+
 }
 
 
@@ -171,8 +171,7 @@ Navigator.of(context).pushNamed("homepage");
 
                                        ref = FirebaseStorage.instance.ref("images").child("$imagename");
                                        Navigator.of(context).pop();
-                                      // await ref.putFile(file);
-                                      // imageurl = await ref.getDownloadURL();
+                                     
    
 
                                     }

@@ -137,7 +137,7 @@ class _SignUpState extends State<SignUp> {
                           }
                           return null;
                         },
-                        obscureText: true, // hayde kermel tkhabbe l password
+                        obscureText: true, // This is for hiding the password
                         decoration: InputDecoration(
                             prefixIcon: Icon(Icons.password),
                             hintText: "Enter Password",

@@ -14,30 +14,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-// List notes =[
-//   {
-//     "note" : "Upper",
-//     "img" : "images/dumbel.jpg"
-//    },
-//     {
-//     "note" : "Lower",
-//     "img" : "images/dumbel.jpg"
-//    },
-//     {
-//     "note" : "Push",
-//     "img" : "images/dumbel.jpg"
-//    },
-//     {
-//     "note" : "Pull",
-//     "img" : "images/dumbel.jpg"
-//    },
-//     {
-//     "note" : "Arms",
-//     "img" : "images/dumbel.jpg"
-//    },
 
-
-// ];
 
 CollectionReference noteRef = FirebaseFirestore.instance.collection("notes");
 
